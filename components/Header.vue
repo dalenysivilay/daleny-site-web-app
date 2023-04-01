@@ -1,34 +1,32 @@
 <template>
-  <header class="bg-gray-800">
-    <nav class="container mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
+  <header class="bg-white rounded-full shadow-lg my-4 inline-flex">
+    <nav class="px-6 py-4">
+      <div class="flex items-center">
+        <nuxt-link to="/" class="font-noto-sans text-xl font-semibold text-neutral-900 mr-20">
+          Daleny
+        </nuxt-link>
         <ul class="flex items-center">
           <li>
-            <nuxt-link to="/" class="text-lg text-gray-100 hover:text-gray-300 mr-6">
+            <nuxt-link to="/about" class="font-noto-sans text-lg text-neutral-900 hover:text-gray-300 mr-6">
               About
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/projects" class="text-lg text-gray-100 hover:text-gray-300 mr-6">
+            <nuxt-link to="/projects" class="font-noto-sans text-lg text-neutral-900 hover:text-gray-300 mr-6">
               Projects
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/experience" class="text-lg text-gray-100 hover:text-gray-300 mr-6">
+            <nuxt-link to="/experience" class="font-noto-sans text-lg text-neutral-900 hover:text-gray-300 mr-6">
               Experience
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/contact" class="text-lg text-gray-100 hover:text-gray-300 mr-6">
+            <nuxt-link to="/contact" class="font-noto-sans text-lg text-neutral-900 hover:text-gray-300 mr-6">
               Contact
             </nuxt-link>
           </li>
         </ul>
-        <div class="flex items-center">
-          <nuxt-link to="/" class="text-xl font-semibold text-gray-100">
-            Daleny
-          </nuxt-link>
-        </div>
       </div>
     </nav>
   </header>
