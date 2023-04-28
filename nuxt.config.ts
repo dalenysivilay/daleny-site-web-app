@@ -1,9 +1,23 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  typescript: {
-    strict: true
+  modules: ['@nuxtjs/tailwindcss'],
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://use.typekit.net/sjw2vzt.css',
+        },
+      ],
+    },
   },
-  modules: [
-    '@nuxtjs/tailwindcss',
-  ]
-})
+  typescript: {
+    strict: true,
+  },
+  css: ['@/assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+});

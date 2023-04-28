@@ -1,14 +1,18 @@
-module.exports = {
-  content: ['./src/**/*.{vue,js,ts,html}'],
+export default {
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+    './app.vue',
+  ],
   theme: {
     extend: {
       fontFamily: {
-        'noto-sans': ['Noto Sans', 'sans-serif'],
-        'roboto': ['Roboto', 'sans-serif'],
+        'fira-sans': ['fira-sans', 'sans-serif'],
+        'acumin-pro': ['acumin-pro', 'sans-serif'],
       },
     },
   },
-  variants: {},
-  plugins: [],
-  jit: true,
-}
+};
