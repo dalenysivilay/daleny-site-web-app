@@ -4,7 +4,7 @@
   >
     <NuxtLink
       to="/"
-      class="ml-6 font-acumin-pro text-3xl font-bold text-neutral-800 transition duration-500 hover:text-green-300"
+      class="ml-6 font-acumin-pro text-3xl font-bold text-neutral-800 transition duration-500 hover:text-green-500"
     >
       Daleny
     </NuxtLink>
@@ -12,7 +12,7 @@
       <NuxtLink
         v-for="links in navigationLinks"
         :to="links.path"
-        class="duraiton-500 mr-6 font-fira-sans text-base font-bold text-neutral-800 transition hover:text-green-300"
+        class="duraiton-500 mr-6 font-fira-sans text-base font-bold text-neutral-800 transition hover:text-green-500"
       >
         {{ links.name }}
       </NuxtLink>
