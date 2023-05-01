@@ -1,5 +1,6 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <main class="container mx-auto flex flex-col justify-center">
+    <Header />
+    <NuxtPage />
+  </main>
 </template>
